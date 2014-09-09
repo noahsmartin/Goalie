@@ -13,6 +13,7 @@
 		4F8C18C419BCC32A00B56B14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C18C219BCC32A00B56B14 /* Main.storyboard */; };
 		4F8C18C619BCC32A00B56B14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C18C519BCC32A00B56B14 /* Images.xcassets */; };
 		4F8C18D219BCC32A00B56B14 /* GoalieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C18D119BCC32A00B56B14 /* GoalieTests.m */; };
+		4F8C18DD19BCC63F00B56B14 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C18DC19BCC63F00B56B14 /* HomePageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		4F8C18CB19BCC32A00B56B14 /* GoalieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoalieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8C18D019BCC32A00B56B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F8C18D119BCC32A00B56B14 /* GoalieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoalieTests.m; sourceTree = "<group>"; };
+		4F8C18DB19BCC63F00B56B14 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		4F8C18DC19BCC63F00B56B14 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				4F8C18BF19BCC32A00B56B14 /* ViewController.h */,
 				4F8C18C019BCC32A00B56B14 /* ViewController.m */,
 				4F8C18C219BCC32A00B56B14 /* Main.storyboard */,
+				4F8C18DB19BCC63F00B56B14 /* HomePageViewController.h */,
+				4F8C18DC19BCC63F00B56B14 /* HomePageViewController.m */,
 				4F8C18C519BCC32A00B56B14 /* Images.xcassets */,
 				4F8C18B819BCC32A00B56B14 /* Supporting Files */,
 			);
@@ -217,6 +222,7 @@
 				4F8C18C119BCC32A00B56B14 /* ViewController.m in Sources */,
 				4F8C18BE19BCC32A00B56B14 /* AppDelegate.m in Sources */,
 				4F8C18BB19BCC32A00B56B14 /* main.m in Sources */,
+				4F8C18DD19BCC63F00B56B14 /* HomePageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +407,7 @@
 				4F8C18D719BCC32A00B56B14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F8C18D819BCC32A00B56B14 /* Build configuration list for PBXNativeTarget "GoalieTests" */ = {
 			isa = XCConfigurationList;
@@ -409,6 +416,7 @@
 				4F8C18DA19BCC32A00B56B14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
