@@ -25,6 +25,10 @@
         
     }];
     [self setDataSource:self];
+    UIPageControl* pageControl = [UIPageControl appearance];
+    pageControl.backgroundColor = [UIColor whiteColor];
+    pageControl.pageIndicatorTintColor = [UIColor grayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor blueColor];
 }
 
 -(UIViewController*)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
