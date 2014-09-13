@@ -7,11 +7,13 @@
 //
 
 #import "HomePageViewController.h"
+#import "GLStatusBarView.h"
 
 @interface HomePageViewController()
 
 @property UIViewController* stats;
 @property UIViewController* feed;
+@property GLStatusBarView* statusBarView;
 
 @end
 
@@ -21,40 +23,42 @@
     UIStoryboard *aStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     self.stats = [aStoryboard instantiateViewControllerWithIdentifier:@"Stats"];
     self.feed = [aStoryboard instantiateViewControllerWithIdentifier:@"Feed"];
-    [self setViewControllers:@[self.stats] direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:^(BOOL finished) {
-        
-    }];
+    [self setViewController:self.stats];
     [self setDataSource:self];
-    UIPageControl* pageControl = [UIPageControl appearance];
-    pageControl.backgroundColor = [UIColor whiteColor];
-    pageControl.pageIndicatorTintColor = [UIColor grayColor];
-    pageControl.currentPageIndicatorTintColor = [UIColor blueColor];
+    [self setDelegate:self];
+   self.statusBarView = [[GLStatusBarView alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
+    self.navigationItem.titleView = self.statusBarView;
+    [super viewDidLoad];
+
 }
 
--(UIViewController*)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
+-(UIViewController*)mn_pageViewController:(MNPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
     if(viewController == self.stats) {
         return self.feed;
     }
-    NSLog(@"after: %@", viewController);
         return nil;
     
 }
 
-- (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
-    // The number of items reflected in the page indicator.
-    return 2;
+- (void)mn_pageViewController:(MNPageViewController *)pageViewController willPageToViewController:(UIViewController *)viewController withRatio:(CGFloat)ratio {
+    if(viewController == nil) {
+        // We don't want to animate the status bar if you scroll beyond the edges
+        return;
+    }
+        if(pageViewController.viewController == self.stats) {
+            self.statusBarView.currentPosition = 0;
+        } else if(pageViewController.viewController == self.feed) {
+            self.statusBarView.currentPosition = 1;
+        }
+    if(pageViewController.viewController != viewController) {
+        self.statusBarView.dragOffset = ratio;
+    }
 }
 
-- (NSInteger)presentationIndexForPageViewController:(UIPageViewController *)pageViewController {
-    // The selected item reflected in the page indicator.
-    return 0;
-}
-
--(UIViewController*)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
+-(UIViewController*)mn_pageViewController:(MNPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
     if(viewController == self.feed) {
         return self.stats;
     }
-    NSLog(@"before %@", viewController);
         return nil;
 }
 

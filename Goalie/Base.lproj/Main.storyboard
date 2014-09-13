@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P3i-Vz-Xla">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A343f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="P3i-Vz-Xla">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
         <!--Search-->
@@ -27,14 +27,16 @@
         <scene sceneID="n9Y-zg-WYs">
             <objects>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="yRD-CP-qIn" customClass="HomePageViewController" sceneMemberID="viewController">
-                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <tabBarItem key="tabBarItem" title="Home" id="Bak-OE-OwN"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <navigationItem key="navigationItem" title="Home" id="Hc3-cb-Faz">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="5t8-Ay-dq5"/>
+                    </navigationItem>
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OTR-Gi-Fwc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852" y="-1100"/>
+            <point key="canvasLocation" x="1258" y="-1016"/>
         </scene>
-        <!--View Controller-->
+        <!--Stats-->
         <scene sceneID="BgD-jV-xAk">
             <objects>
                 <viewController storyboardIdentifier="Stats" id="EZk-KY-lC9" sceneMemberID="viewController">
@@ -46,8 +48,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Stats" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="baP-1e-mAv">
-                                <rect key="frame" x="280" y="20" width="40" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Stats go here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzi-Aq-M8F">
+                                <rect key="frame" x="279" y="78" width="103" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -55,15 +57,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="baP-1e-mAv" secondAttribute="centerX" id="4lf-I2-RXH"/>
+                            <constraint firstAttribute="centerX" secondItem="yzi-Aq-M8F" secondAttribute="centerX" id="n3B-Oe-cNj"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Stats" id="Tbx-zy-1aR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ym-De-6NR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1698" y="-1602"/>
+            <point key="canvasLocation" x="4134" y="-1602"/>
         </scene>
-        <!--View Controller-->
+        <!--Feed-->
         <scene sceneID="ePN-Vr-gxl">
             <objects>
                 <viewController storyboardIdentifier="Feed" id="g5Q-FK-MM0" sceneMemberID="viewController">
@@ -74,20 +77,13 @@
                     <view key="view" contentMode="scaleToFill" id="v85-eM-LN0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eby-2N-vqG">
-                                <rect key="frame" x="279" y="28" width="39" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Feed" id="1B8-oV-8h7"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RLQ-YG-CdO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690" y="-830"/>
+            <point key="canvasLocation" x="3314" y="-830"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qTj-al-KzX">
@@ -100,32 +96,33 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="smd-8L-9gr" kind="relationship" relationship="viewControllers" id="jxd-0x-Xzi"/>
+                        <segue destination="Ve4-JU-xbF" kind="relationship" relationship="viewControllers" id="XV5-m1-Gg7"/>
                         <segue destination="cY4-Ck-Npd" kind="relationship" relationship="viewControllers" id="SNQ-3n-Olh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8KY-Yh-jTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-692" y="-562"/>
+            <point key="canvasLocation" x="-952" y="-540"/>
         </scene>
-        <!--Goalie-->
-        <scene sceneID="Q7S-2b-cRh">
+        <!--Home-->
+        <scene sceneID="TZc-ce-N2X">
             <objects>
-                <tabBarController title="Goalie" automaticallyAdjustsScrollViewInsets="NO" id="smd-8L-9gr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="F85-qo-X2T"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ve4-JU-xbF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" id="PNZ-t9-emS"/>
                     <toolbarItems/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="9bV-8s-Gs6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h2i-EN-tBT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
+                        <color key="barTintColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="yRD-CP-qIn" kind="relationship" relationship="viewControllers" id="qk3-im-nac"/>
+                        <segue destination="yRD-CP-qIn" kind="relationship" relationship="rootViewController" id="mEU-C9-9wb"/>
                     </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="htE-zn-LO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CTP-xE-5yP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40" y="-1100"/>
+            <point key="canvasLocation" x="446" y="-1016"/>
         </scene>
     </scenes>
 </document>

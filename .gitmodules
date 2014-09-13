@@ -1,0 +1,3 @@
+[submodule "Vendor/MNPageViewController"]
+	path = Vendor/MNPageViewController
+	url = https://github.com/min/MNPageViewController.git

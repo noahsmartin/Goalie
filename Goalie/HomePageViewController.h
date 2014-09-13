@@ -6,8 +6,9 @@
 //
 //
 
+#import <MNPageViewController/MNPageViewController.h>
 #import <UIKit/UIKit.h>
 
-@interface HomePageViewController : UIPageViewController <UIPageViewControllerDataSource>
+@interface HomePageViewController : MNPageViewController <MNPageViewControllerDataSource, MNPageViewControllerDelegate>
 
 @end

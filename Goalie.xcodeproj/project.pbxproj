@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F52AFFB19C4CC7600080A2B /* GLStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F52AFFA19C4CC7600080A2B /* GLStatusBarView.m */; };
 		4F8C18BB19BCC32A00B56B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C18BA19BCC32A00B56B14 /* main.m */; };
 		4F8C18BE19BCC32A00B56B14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C18BD19BCC32A00B56B14 /* AppDelegate.m */; };
 		4F8C18C119BCC32A00B56B14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C18C019BCC32A00B56B14 /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		4F8C18C619BCC32A00B56B14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F8C18C519BCC32A00B56B14 /* Images.xcassets */; };
 		4F8C18D219BCC32A00B56B14 /* GoalieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C18D119BCC32A00B56B14 /* GoalieTests.m */; };
 		4F8C18DD19BCC63F00B56B14 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C18DC19BCC63F00B56B14 /* HomePageViewController.m */; };
+		4F8C18E719BECCCD00B56B14 /* libMNPageViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8C18E419BECCBB00B56B14 /* libMNPageViewController.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,9 +26,25 @@
 			remoteGlobalIDString = 4F8C18B419BCC32A00B56B14;
 			remoteInfo = Goalie;
 		};
+		4F8C18E319BECCBB00B56B14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8C18DE19BECCBB00B56B14 /* MNPageViewController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3945BE4A179DBF9700AB3981;
+			remoteInfo = MNPageViewController;
+		};
+		4F8C18E519BECCBB00B56B14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8C18DE19BECCBB00B56B14 /* MNPageViewController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 3945BE5A179DBF9700AB3981;
+			remoteInfo = MNPageViewControllerTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F52AFF919C4CC7600080A2B /* GLStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLStatusBarView.h; sourceTree = "<group>"; };
+		4F52AFFA19C4CC7600080A2B /* GLStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLStatusBarView.m; sourceTree = "<group>"; };
 		4F8C18B519BCC32A00B56B14 /* Goalie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goalie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8C18B919BCC32A00B56B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F8C18BA19BCC32A00B56B14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -41,6 +59,7 @@
 		4F8C18D119BCC32A00B56B14 /* GoalieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoalieTests.m; sourceTree = "<group>"; };
 		4F8C18DB19BCC63F00B56B14 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		4F8C18DC19BCC63F00B56B14 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		4F8C18DE19BECCBB00B56B14 /* MNPageViewController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MNPageViewController.xcodeproj; path = Vendor/MNPageViewController/MNPageViewController.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F8C18E719BECCCD00B56B14 /* libMNPageViewController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +87,7 @@
 				4F8C18B719BCC32A00B56B14 /* Goalie */,
 				4F8C18CE19BCC32A00B56B14 /* GoalieTests */,
 				4F8C18B619BCC32A00B56B14 /* Products */,
+				4F8C18DE19BECCBB00B56B14 /* MNPageViewController.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,6 +110,8 @@
 				4F8C18C219BCC32A00B56B14 /* Main.storyboard */,
 				4F8C18DB19BCC63F00B56B14 /* HomePageViewController.h */,
 				4F8C18DC19BCC63F00B56B14 /* HomePageViewController.m */,
+				4F52AFF919C4CC7600080A2B /* GLStatusBarView.h */,
+				4F52AFFA19C4CC7600080A2B /* GLStatusBarView.m */,
 				4F8C18C519BCC32A00B56B14 /* Images.xcassets */,
 				4F8C18B819BCC32A00B56B14 /* Supporting Files */,
 			);
@@ -119,6 +142,15 @@
 				4F8C18D019BCC32A00B56B14 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4F8C18DF19BECCBB00B56B14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F8C18E419BECCBB00B56B14 /* libMNPageViewController.a */,
+				4F8C18E619BECCBB00B56B14 /* MNPageViewControllerTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +219,12 @@
 			mainGroup = 4F8C18AC19BCC32A00B56B14;
 			productRefGroup = 4F8C18B619BCC32A00B56B14 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4F8C18DF19BECCBB00B56B14 /* Products */;
+					ProjectRef = 4F8C18DE19BECCBB00B56B14 /* MNPageViewController.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4F8C18B419BCC32A00B56B14 /* Goalie */,
@@ -194,6 +232,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		4F8C18E419BECCBB00B56B14 /* libMNPageViewController.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMNPageViewController.a;
+			remoteRef = 4F8C18E319BECCBB00B56B14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		4F8C18E619BECCBB00B56B14 /* MNPageViewControllerTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MNPageViewControllerTests.xctest;
+			remoteRef = 4F8C18E519BECCBB00B56B14 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4F8C18B319BCC32A00B56B14 /* Resources */ = {
@@ -219,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F52AFFB19C4CC7600080A2B /* GLStatusBarView.m in Sources */,
 				4F8C18C119BCC32A00B56B14 /* ViewController.m in Sources */,
 				4F8C18BE19BCC32A00B56B14 /* AppDelegate.m in Sources */,
 				4F8C18BB19BCC32A00B56B14 /* main.m in Sources */,
