@@ -69,7 +69,7 @@
         <!--Feed-->
         <scene sceneID="ePN-Vr-gxl">
             <objects>
-                <viewController storyboardIdentifier="Feed" id="g5Q-FK-MM0" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Feed" title="Feed" id="g5Q-FK-MM0" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JSn-Hh-6Ii"/>
                         <viewControllerLayoutGuide type="bottom" id="re2-gN-vPV"/>
@@ -113,7 +113,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="h2i-EN-tBT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.25098040699958801" green="0.50196081399917603" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.34327952140452139" green="0.68008207070707072" blue="0.0064769721019720793" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

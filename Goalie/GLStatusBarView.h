@@ -12,5 +12,7 @@
 
 @property (nonatomic) int currentPosition;
 @property (nonatomic) float dragOffset;
+@property UILabel *firstTitle;
+@property UILabel *secondTitle;
 
 @end

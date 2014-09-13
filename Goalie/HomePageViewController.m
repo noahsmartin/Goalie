@@ -26,10 +26,11 @@
     [self setViewController:self.stats];
     [self setDataSource:self];
     [self setDelegate:self];
-   self.statusBarView = [[GLStatusBarView alloc] initWithFrame:CGRectMake(0, 0, 100, 40)];
+   self.statusBarView = [[GLStatusBarView alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
     self.navigationItem.titleView = self.statusBarView;
     [super viewDidLoad];
-
+    NSDictionary* attributes = [[UINavigationBar appearance] titleTextAttributes];
+    NSLog(@"%@", attributes);
 }
 
 -(UIViewController*)mn_pageViewController:(MNPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
