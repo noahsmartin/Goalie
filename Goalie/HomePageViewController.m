@@ -26,6 +26,7 @@
     [self setViewController:self.stats];
     [self setDataSource:self];
     [self setDelegate:self];
+    self.view.backgroundColor = [UIColor lightGrayColor];
    self.statusBarView = [[GLStatusBarView alloc] initWithFrame:CGRectMake(0, 0, 100, 44)];
     self.navigationItem.titleView = self.statusBarView;
     [super viewDidLoad];

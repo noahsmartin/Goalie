@@ -19,7 +19,7 @@
         self.backgroundColor = [UIColor clearColor];
         self.firstTitle = [[UILabel alloc] initWithFrame:frame];
         self.secondTitle = [[UILabel alloc] initWithFrame:frame];
-        self.firstTitle.text = @"Stats";
+        self.firstTitle.text = @"Goal Sheet";
         self.secondTitle.text = @"Feed";
         self.firstTitle.textAlignment = NSTextAlignmentCenter;
         self.secondTitle.textAlignment = NSTextAlignmentCenter;
