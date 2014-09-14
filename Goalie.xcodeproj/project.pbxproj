@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F52AFFB19C4CC7600080A2B /* GLStatusBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F52AFFA19C4CC7600080A2B /* GLStatusBarView.m */; };
+		4F52B00119C5126900080A2B /* BaseGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F52B00019C5126900080A2B /* BaseGoal.m */; };
 		4F8C18BB19BCC32A00B56B14 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C18BA19BCC32A00B56B14 /* main.m */; };
 		4F8C18BE19BCC32A00B56B14 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C18BD19BCC32A00B56B14 /* AppDelegate.m */; };
 		4F8C18C119BCC32A00B56B14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C18C019BCC32A00B56B14 /* ViewController.m */; };
@@ -45,6 +46,8 @@
 /* Begin PBXFileReference section */
 		4F52AFF919C4CC7600080A2B /* GLStatusBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLStatusBarView.h; sourceTree = "<group>"; };
 		4F52AFFA19C4CC7600080A2B /* GLStatusBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLStatusBarView.m; sourceTree = "<group>"; };
+		4F52AFFF19C5126900080A2B /* BaseGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGoal.h; sourceTree = "<group>"; };
+		4F52B00019C5126900080A2B /* BaseGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGoal.m; sourceTree = "<group>"; };
 		4F8C18B519BCC32A00B56B14 /* Goalie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goalie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F8C18B919BCC32A00B56B14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F8C18BA19BCC32A00B56B14 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				4F8C18DC19BCC63F00B56B14 /* HomePageViewController.m */,
 				4F52AFF919C4CC7600080A2B /* GLStatusBarView.h */,
 				4F52AFFA19C4CC7600080A2B /* GLStatusBarView.m */,
+				4F52AFFF19C5126900080A2B /* BaseGoal.h */,
+				4F52B00019C5126900080A2B /* BaseGoal.m */,
 				4F8C18C519BCC32A00B56B14 /* Images.xcassets */,
 				4F8C18B819BCC32A00B56B14 /* Supporting Files */,
 			);
@@ -277,6 +282,7 @@
 				4F52AFFB19C4CC7600080A2B /* GLStatusBarView.m in Sources */,
 				4F8C18C119BCC32A00B56B14 /* ViewController.m in Sources */,
 				4F8C18BE19BCC32A00B56B14 /* AppDelegate.m in Sources */,
+				4F52B00119C5126900080A2B /* BaseGoal.m in Sources */,
 				4F8C18BB19BCC32A00B56B14 /* main.m in Sources */,
 				4F8C18DD19BCC63F00B56B14 /* HomePageViewController.m in Sources */,
 			);
