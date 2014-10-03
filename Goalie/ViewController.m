@@ -2,7 +2,7 @@
 //  ViewController.m
 //  Goalie
 //
-//  Created by Noah Martin on 9/7/14.
+//  Created by Noah Martin on 9/7/14. Josh did some too. 
 //
 //
 
