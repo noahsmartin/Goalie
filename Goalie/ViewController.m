@@ -2,7 +2,7 @@
 //  ViewController.m
 //  Goalie
 //
-//  Created by Noah Martin on 9/7/14. Josh did some too. 
+//  Created by Noah Martin on 9/7/14. Josh did some too.
 //
 //
 
@@ -15,7 +15,7 @@
 @implementation ViewController
             
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    [super viewDidLoad];// This is a test
     // Do any additional setup after loading the view, typically from a nib.
 }
 
