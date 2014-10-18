@@ -13,6 +13,7 @@
 
 @property UIViewController* stats;
 @property UIViewController* feed;
+@property UIViewController* today;
 @property GLStatusBarView* statusBarView;
 
 @end
@@ -23,6 +24,7 @@
     UIStoryboard *aStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     self.stats = [aStoryboard instantiateViewControllerWithIdentifier:@"Stats"];
     self.feed = [aStoryboard instantiateViewControllerWithIdentifier:@"Feed"];
+    self.today = [aStoryboard instantiateViewControllerWithIdentifier:@"Today"];
     [self setViewController:self.stats];
     [self setDataSource:self];
     [self setDelegate:self];
@@ -37,6 +39,8 @@
 -(UIViewController*)mn_pageViewController:(MNPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
     if(viewController == self.stats) {
         return self.feed;
+    } else if(viewController == self.feed) {
+        return self.today;
     }
         return nil;
     
@@ -51,15 +55,19 @@
             self.statusBarView.currentPosition = 0;
         } else if(pageViewController.viewController == self.feed) {
             self.statusBarView.currentPosition = 1;
+        } else if(pageViewController.viewController == self.today) {
+            self.statusBarView.currentPosition = 2;
         }
     if(pageViewController.viewController != viewController) {
-        self.statusBarView.dragOffset = ratio;
+        self.statusBarView.dragOffset = ratio * (pageViewController.viewController == self.feed && viewController == self.stats ? -1 : 1);
     }
 }
 
 -(UIViewController*)mn_pageViewController:(MNPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
     if(viewController == self.feed) {
         return self.stats;
+    } else if(viewController == self.today) {
+        return self.feed;
     }
         return nil;
 }

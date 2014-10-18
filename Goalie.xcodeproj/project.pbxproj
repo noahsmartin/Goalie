@@ -17,6 +17,7 @@
 		4F8C18D219BCC32A00B56B14 /* GoalieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C18D119BCC32A00B56B14 /* GoalieTests.m */; };
 		4F8C18DD19BCC63F00B56B14 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F8C18DC19BCC63F00B56B14 /* HomePageViewController.m */; };
 		4F8C18E719BECCCD00B56B14 /* libMNPageViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8C18E419BECCBB00B56B14 /* libMNPageViewController.a */; };
+		4FF7CBB219DE313600FE0CF3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF7CBB119DE313600FE0CF3 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		4F8C18DB19BCC63F00B56B14 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		4F8C18DC19BCC63F00B56B14 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
 		4F8C18DE19BECCBB00B56B14 /* MNPageViewController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MNPageViewController.xcodeproj; path = Vendor/MNPageViewController/MNPageViewController.xcodeproj; sourceTree = "<group>"; };
+		4FF7CBB019DE313600FE0CF3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		4FF7CBB119DE313600FE0CF3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				4F8C18BD19BCC32A00B56B14 /* AppDelegate.m */,
 				4F8C18BF19BCC32A00B56B14 /* ViewController.h */,
 				4F8C18C019BCC32A00B56B14 /* ViewController.m */,
+				4FF7CBB019DE313600FE0CF3 /* LoginViewController.h */,
+				4FF7CBB119DE313600FE0CF3 /* LoginViewController.m */,
 				4F8C18C219BCC32A00B56B14 /* Main.storyboard */,
 				4F8C18DB19BCC63F00B56B14 /* HomePageViewController.h */,
 				4F8C18DC19BCC63F00B56B14 /* HomePageViewController.m */,
@@ -283,6 +288,7 @@
 				4F8C18C119BCC32A00B56B14 /* ViewController.m in Sources */,
 				4F8C18BE19BCC32A00B56B14 /* AppDelegate.m in Sources */,
 				4F52B00119C5126900080A2B /* BaseGoal.m in Sources */,
+				4FF7CBB219DE313600FE0CF3 /* LoginViewController.m in Sources */,
 				4F8C18BB19BCC32A00B56B14 /* main.m in Sources */,
 				4F8C18DD19BCC63F00B56B14 /* HomePageViewController.m in Sources */,
 			);

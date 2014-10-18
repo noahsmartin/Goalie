@@ -14,5 +14,6 @@
 @property (nonatomic) float dragOffset;
 @property UILabel *firstTitle;
 @property UILabel *secondTitle;
+@property UILabel *thirdTitle;
 
 @end
